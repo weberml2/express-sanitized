@@ -1,1 +1,1 @@
-module.exports = require('./lib/express-sanitizer.js');
+module.exports = require('./lib/express-sanitized.js');

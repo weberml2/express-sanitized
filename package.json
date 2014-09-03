@@ -1,25 +1,25 @@
 {
-  "name": "express-sanitizer",
+  "name": "express-sanitized",
   "description": "Express middleware for the sanitizer module.",
   "author": {
-    "name": "Mark Andrews",
-    "email": "20metresbelow@gmail.com"
+    "name": "Patrick Hogan",
+    "email": "patrick@callinize.com"
   },
   "version": "0.1.0",
-  "homepage": "https://github.com/markau/express-sanitizer",
+  "homepage": "https://github.com/askhogan/express-sanitized",
   "repository": {
     "type": "git",
-    "url": "git://github.com/markau/express-sanitizer.git"
+    "url": "git://github.com/askhogan/express-sanitized.git"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "main": "./index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "sanitizer": "0.1.1"
+    "sanitizer": "0.1.1",
+    "underscore": "^1.7.0"
   },
   "keywords": [
     "express",
@@ -28,8 +28,6 @@
     "xss"
   ],
   "bugs": {
-    "url": "https://github.com/markau/express-sanitizer/issues"
-  },
-  "_id": "express-validator@0.1.0",
-  "_from": "express-validator@latest"
+    "url": "https://github.com/askhogan/express-sanitized/issues"
+  }
 }
