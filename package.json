@@ -1,12 +1,13 @@
 {
   "name": "express-sanitized",
-  "description": "Express middleware for the sanitizer module.",
-  "author": {
-    "name": "Patrick Hogan",
-    "email": "patrick@callinize.com"
-  },
-  "version": "0.1.0",
+  "description": "Express middleware for the sanitizer module using Caja's HTML Sanitizer.",
+  "version": "1.0.0",
+  "author": "Patrick Hogan <patrick@callinize.com>",
   "homepage": "https://github.com/askhogan/express-sanitized",
+  "bugs": {
+    "email": "patrick@callinize.com",
+    "url": "https://github.com/askhogan/express-sanitized/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/askhogan/express-sanitized.git"
@@ -18,8 +19,7 @@
     "node": "*"
   },
   "dependencies": {
-    "sanitizer": "0.1.1",
-    "underscore": "^1.7.0"
+    "sanitizer": "0.1.2"
   },
   "keywords": [
     "express",
@@ -27,7 +27,12 @@
     "sanitization",
     "xss"
   ],
-  "bugs": {
-    "url": "https://github.com/askhogan/express-sanitized/issues"
+  "devDependencies": {
+    "body-parser": "^1.7.0",
+    "connect": "^3.1.1",
+    "express": "^4.8.7",
+    "mocha": "^1.21.4",
+    "optimist": "^0.6.1",
+    "supertest": "^0.13.0"
   }
 }

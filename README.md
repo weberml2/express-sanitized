@@ -1,46 +1,33 @@
-# express-sanitizer
-
-[![Build Status](https://travis-ci.org/markau/express-sanitizer.png?branch=master)](https://travis-ci.org/markau/express-sanitizer)
-
-An express middleware for [Caja-HTML-Sanitizer](https://github.com/theSmaw/Caja-HTML-Sanitizer), which wraps [Google Caja sanitizer](https://code.google.com/p/google-caja/wiki/JsHtmlSanitizer).  
-
-A useful complement to the [express-validator](https://github.com/ctavan/express-validator) -- to fill a gap now that XSS sanitization support has been removed from that module's parent [node-validator](https://github.com/chriso/node-validator).
+# express-sanitized
 
 ## Installation
 
 ```
-npm install express-sanitizer
+npm install express-sanitized
 ```
 
 ## Usage
 
-Needs to be called after express.bodyParser() and before anything that requires the sanitized input, e.g.:
+Place this directly after express.bodyParser() and before any request parameters are used, e.g.:
+
 
 ```javascript
 var express = require('express'),
-    expressSanitizer = require('express-sanitizer');
+    expressSanitized = require('express-sanitized');
 
 app.use(express.bodyParser());
-app.use(expressSanitizer([options])); // this line follows express.bodyParser()
-```
-
-```javascript
-app.post('/:urlparam', function(req, res) {
-  //validation here
-
-  // replace an HTTP posted body property with the sanitized string
-  req.body.propertyToSanitize = req.sanitize(req.param('propertyToSanitize'));
-});
+app.use(expressSanitized()); // this line follows express.bodyParser()
 
 ```
+
 
 ## Output
 
 The string 
 ```javascript
-'<script>hello</script> world'
+'<script>document.write('cookie monster')</script> download now'
 ```
-will be sanitized to ' world'.
+will be sanitized to ' download now'.
 
 ## Limitations
 
@@ -50,16 +37,22 @@ This is a basic implementation of [Caja-HTML-Sanitizer](https://github.com/theSm
 
 This module trusts the dependencies to provide basic persistent XSS risk mitigation. A user of this package should review all packages and make their own decision on security and fitness for purpose. 
 
+This module was inspired by [express-sanitizer](https://www.npmjs.org/package/express-sanitizer).
+  The difference here is strict laziness.  This middleware automatically
+  sanitizes post and query values whereas that module requires you to manually sanitize each
+  parameter.
+
 ## Changelog
 
-### v0.1.0
+### v0.5.0
 - Initial release
 
 ## Contributors
 
-- Mark Andrews <20metresbelow@gmail.com> - Wrap the sanitizer in an npm package
+- Patrick Hogan <patrick@callinize.com> - Wrap the sanitizer in an npm package
+- Callinize (http://www.callinize.com)
 
 ## License
 
-Copyright (c) 2014 Mark Andrews <20metresbelow@gmail.com>, MIT License
+Copyright (c) 2014 Patrick Hogan <patrick@callinize.com>, MIT License
 
