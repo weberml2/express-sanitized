@@ -44,7 +44,7 @@ This module was inspired by [express-sanitizer](https://www.npmjs.org/package/ex
 
 ## Changelog
 
-### v0.5.0
+### v0.5.1
 - Initial release
 
 ## Contributors
