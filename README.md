@@ -50,7 +50,7 @@ This module was inspired by [express-sanitizer](https://www.npmjs.org/package/ex
 ## Contributors
 
 - Patrick Hogan <patrick@callinize.com> - Wrap the sanitizer in an npm package
-- Callinize (http://www.callinize.com)
+- [Callinize](http://www.callinize.com)
 
 ## License
 

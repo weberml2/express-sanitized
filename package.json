@@ -1,7 +1,7 @@
 {
   "name": "express-sanitized",
   "description": "Express middleware for the sanitizer module using Caja's HTML Sanitizer.",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "author": "Patrick Hogan <patrick@callinize.com>",
   "homepage": "https://github.com/askhogan/express-sanitized",
   "bugs": {
