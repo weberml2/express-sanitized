@@ -8,7 +8,7 @@ npm install express-sanitized
 
 ## Usage
 
-Place this directly after express.bodyParser() and before any request parameters are used, e.g.:
+Place this directly after express.bodyParser() and before any express middleware that accesses query or body parameters, e.g.:
 
 
 ```javascript
@@ -50,6 +50,7 @@ This module was inspired by [express-sanitizer](https://www.npmjs.org/package/ex
 ## Contributors
 
 - Patrick Hogan <patrick@callinize.com> - Wrap the sanitizer in an npm package
+- Mark Andrews <20metresbelow@gmail.com>* - Wrote the initial express-sanitizer.  I forked his library.
 - [Callinize](http://www.callinize.com)
 
 ## License
