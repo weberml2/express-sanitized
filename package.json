@@ -7,7 +7,7 @@
     "url": "git://github.com/weberml2/express-sanitized.git"
   },
   "dependencies": {
-    "sanitizer": "0.1.2",
+    "sanitizer": "weberml2/Caja-HTML-Sanitizer",
     "underscore": "1.7.0"
   },
   "devDependencies": {
