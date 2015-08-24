@@ -1,33 +1,11 @@
 {
   "name": "express-sanitized",
   "description": "Express middleware for the sanitizer module using Caja's HTML Sanitizer.",
-  "version": "0.5.1",
-  "author": "Patrick Hogan <patrick@callinize.com>",
-  "homepage": "https://github.com/askhogan/express-sanitized",
-  "bugs": {
-    "email": "patrick@callinize.com",
-    "url": "https://github.com/askhogan/express-sanitized/issues"
-  },
+  "version": "0.6.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/askhogan/express-sanitized.git"
+    "url": "git://github.com/weberml2/express-sanitized.git"
   },
-  "license": "MIT",
-  "main": "./index.js",
-  "scripts": {},
-  "engines": {
-    "node": "*"
-  },
-  "dependencies": {
-    "sanitizer": "0.1.2",
-    "underscore": "1.7.0"
-  },
-  "keywords": [
-    "express",
-    "sanitize",
-    "sanitization",
-    "xss"
-  ],
   "devDependencies": {
     "body-parser": "^1.7.0",
     "connect": "^3.1.1",
