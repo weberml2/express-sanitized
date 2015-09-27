@@ -1,7 +1,7 @@
 {
   "name": "express-sanitized",
   "description": "Express middleware for the sanitizer module using Caja's HTML Sanitizer.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/weberml2/express-sanitized.git"
